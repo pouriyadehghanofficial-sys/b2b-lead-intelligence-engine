@@ -1,0 +1,35 @@
+# B2B Lead Intelligence Engine - Default Configuration
+
+# Application Settings
+debug: false
+log_level: INFO
+cache_enabled: true
+checkpoint_dir: ./checkpoints
+data_dir: ./data
+db_path: ./data/leads.db
+
+# Search Configuration
+search_timeout: 30
+search_retries: 3
+
+# LLM Configuration
+enable_llm: true
+llm_timeout: 60
+
+# Network Configuration
+verify_ssl: true
+user_agent: B2B-Lead-Intelligence-Engine/1.0
+
+# Pipeline Configuration
+batch_size: 10
+max_concurrent_requests: 5
+enable_deduplication: true
+confidence_threshold: 0.3
+lead_score_threshold: 0.5
+
+# Phone Configuration
+country_code: '+98'
+phone_validation_strict: false
+
+# Industry Configuration
+industry_cache_enabled: true
